@@ -1,0 +1,6 @@
+@Fiap.Grupo10.BrizolaJiuJitsu_HostAddress = http://localhost:5280
+
+GET {{Fiap.Grupo10.BrizolaJiuJitsu_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
