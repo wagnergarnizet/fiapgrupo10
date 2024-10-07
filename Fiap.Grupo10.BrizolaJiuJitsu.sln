@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.Api", "Fiap.Grupo10.BrizolaJiuJitsu\Fiap.Grupo10.BrizolaJiuJitsu.Api.csproj", "{FC89B400-11E7-431C-B152-44B59BFE5CF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.Domain", "Fiap.Grupo10.BrizolaJiuJitsu.Domain\Fiap.Grupo10.BrizolaJiuJitsu.Domain.csproj", "{FBA7CF8C-F729-48D6-BE79-652455874AB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.Domain", "Fiap.Grupo10.BrizolaJiuJitsu.Domain\Fiap.Grupo10.BrizolaJiuJitsu.Domain.csproj", "{FBA7CF8C-F729-48D6-BE79-652455874AB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure", "Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure\Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure.csproj", "{150F1063-EE46-4F67-84F8-BF80B0C3BC60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure", "Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure\Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure.csproj", "{150F1063-EE46-4F67-84F8-BF80B0C3BC60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.Application", "Fiap.Grupo10.BrizolaJiuJitsu.Application\Fiap.Grupo10.BrizolaJiuJitsu.Application.csproj", "{5D41BAA1-3C5C-4646-AB94-15F78027A1D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.Application", "Fiap.Grupo10.BrizolaJiuJitsu.Application\Fiap.Grupo10.BrizolaJiuJitsu.Application.csproj", "{5D41BAA1-3C5C-4646-AB94-15F78027A1D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.CrossCutting", "Fiap.Grupo10.BrizolaJiuJitsu.CrossCutting\Fiap.Grupo10.BrizolaJiuJitsu.CrossCutting.csproj", "{F571B69C-8124-4790-936C-02A83A16B244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.CrossCutting", "Fiap.Grupo10.BrizolaJiuJitsu.CrossCutting\Fiap.Grupo10.BrizolaJiuJitsu.CrossCutting.csproj", "{F571B69C-8124-4790-936C-02A83A16B244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.Api", "Fiap.Grupo10.BrizolaJiuJitsu.Api\Fiap.Grupo10.BrizolaJiuJitsu.Api.csproj", "{8C9C1F2A-9238-4CBA-BCB0-26A9F860D0CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.Test", "Fiap.Grupo10.BrizolaJiuJitsu.Test\Fiap.Grupo10.BrizolaJiuJitsu.Test.csproj", "{4FC9E79F-AC48-49CA-B123-1D4514B34529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FC89B400-11E7-431C-B152-44B59BFE5CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC89B400-11E7-431C-B152-44B59BFE5CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC89B400-11E7-431C-B152-44B59BFE5CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC89B400-11E7-431C-B152-44B59BFE5CF1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FBA7CF8C-F729-48D6-BE79-652455874AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FBA7CF8C-F729-48D6-BE79-652455874AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBA7CF8C-F729-48D6-BE79-652455874AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +37,14 @@ Global
 		{F571B69C-8124-4790-936C-02A83A16B244}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F571B69C-8124-4790-936C-02A83A16B244}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F571B69C-8124-4790-936C-02A83A16B244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9C1F2A-9238-4CBA-BCB0-26A9F860D0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9C1F2A-9238-4CBA-BCB0-26A9F860D0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9C1F2A-9238-4CBA-BCB0-26A9F860D0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9C1F2A-9238-4CBA-BCB0-26A9F860D0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC9E79F-AC48-49CA-B123-1D4514B34529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC9E79F-AC48-49CA-B123-1D4514B34529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC9E79F-AC48-49CA-B123-1D4514B34529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC9E79F-AC48-49CA-B123-1D4514B34529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,25 +2,15 @@
 using Dapper.Contrib.Extensions;
 using Fiap.Grupo10.BrizolaJiuJitsu.Domain.Entities;
 using Fiap.Grupo10.BrizolaJiuJitsu.Domain.Interfaces.Repositories;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure.Repositories
 {
-    public class PractitionerRepository : IPractitionerRepository
+    public class PractitionerRepository(IDbConnection dbConnection) : IPractitionerRepository
     {
-        private readonly IDbConnection _dbConnection;
+        private readonly IDbConnection _dbConnection = dbConnection;
 
-        public PractitionerRepository(IDbConnection dbConnection)
-        {
-            _dbConnection = dbConnection;
-        }
-
-        public async Task<int> InsertAsync (Practitioner practitioner)
+        public async Task<int> InsertAsync(Practitioner practitioner)
         {
             if (practitioner == null)
                 return 0;
@@ -46,7 +36,20 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure.Repositories
             return await _dbConnection.ExecuteAsync(insertQuery, parametros);
         }
 
-        public async Task<IEnumerable<Practitioner>> GetAsync()       
-           => await _dbConnection.GetAllAsync<Practitioner>();       
+        public async Task<IEnumerable<Practitioner>> GetAsync()
+        {
+            try
+            {
+                var result = await _dbConnection.GetAllAsync<Practitioner>();
+
+                return result;
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
     }
 }

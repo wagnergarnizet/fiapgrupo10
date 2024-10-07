@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fiap.Grupo10.BrizolaJiuJitsu.Domain\Fiap.Grupo10.BrizolaJiuJitsu.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

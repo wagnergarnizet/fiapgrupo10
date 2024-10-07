@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace Fiap.Grupo10.BrizolaJiuJitsu.CrossCutting
 {
-    public static class RepositorieDependencyInjection
+    public static class RepositoriesDependencyInjection
     {
         public static IServiceCollection AddRepositoriesDependency (this IServiceCollection service)
         {

@@ -14,7 +14,8 @@ var connectionString = configuration.GetValue<string>("ConnectionString");
 
 builder.Services.AddDbDependency(connectionString);
 builder.Services.AddRepositoriesDependency();
-
+builder.Services.AddServicesDependency();
+builder.Services.AddApplicationDependency();
 
 var app = builder.Build();
 

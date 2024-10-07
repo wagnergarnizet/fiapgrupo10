@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Fiap.Grupo10.BrizolaJiuJitsu.Application\Fiap.Grupo10.BrizolaJiuJitsu.Application.csproj" />
     <ProjectReference Include="..\Fiap.Grupo10.BrizolaJiuJitsu.Domain\Fiap.Grupo10.BrizolaJiuJitsu.Domain.csproj" />
     <ProjectReference Include="..\Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure\Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure.csproj" />
   </ItemGroup>
