@@ -18,6 +18,14 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Requires authentication via token independent of Role
+        /// </summary>
+        /// <returns>Returns list of registered practitioners</returns>
+        /// <response code="200">List of items retrieved successfully.</response>
+        /// <response code="204">No items found.</response>
+        /// <response code="401">You are not authorized to access this resource. Please log in and try again.</response>
+        /// <response code="500">An error occurred while retrieving the items. Please try again later.</response>
         [HttpGet(Name = "GetPractitioner")]
         public async Task<IEnumerable<Practitioner>> Get()
         {
@@ -36,6 +44,13 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Controllers
             {
                 throw e;
             }
+        }
+
+        [HttpPost("PostPractitioner")]
+        public IActionResult PostInsertPractitioner([FromBody] Practitioner practitioner)
+        {
+            //await _practitionerApplication.GetAllAsync();
+            return Ok(practitioner);
         }
     }
 }

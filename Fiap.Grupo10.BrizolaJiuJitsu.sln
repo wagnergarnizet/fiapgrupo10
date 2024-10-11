@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJits
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.Api", "Fiap.Grupo10.BrizolaJiuJitsu.Api\Fiap.Grupo10.BrizolaJiuJitsu.Api.csproj", "{8C9C1F2A-9238-4CBA-BCB0-26A9F860D0CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.Test", "Fiap.Grupo10.BrizolaJiuJitsu.Test\Fiap.Grupo10.BrizolaJiuJitsu.Test.csproj", "{4FC9E79F-AC48-49CA-B123-1D4514B34529}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.Test", "Fiap.Grupo10.BrizolaJiuJitsu.Test\Fiap.Grupo10.BrizolaJiuJitsu.Test.csproj", "{4FC9E79F-AC48-49CA-B123-1D4514B34529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
