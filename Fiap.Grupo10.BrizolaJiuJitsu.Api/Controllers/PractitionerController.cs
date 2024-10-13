@@ -23,15 +23,20 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Controllers
         /// </summary>
         /// <returns>Returns list of registered practitioners</returns>
         /// <response code="200">List of items retrieved successfully.</response>
-        /// <response code="204">No items found.</response>
         /// <response code="401">You are not authorized to access this resource. Please log in and try again.</response>
         /// <response code="500">An error occurred while retrieving the items. Please try again later.</response>
+        /// <response code="503">Service is currently unavailable. Please try again later.</response>
         [HttpGet(Name = "GetPractitioner")]
-        public async Task<IEnumerable<Practitioner>> Get()
+        public async Task<ActionResult<IEnumerable<Practitioner>>> Get()
         {
             try
-            {            
-                return await _practitionerApplication.GetAllAsync();
+            {
+                _logger.LogInformation("Fetching all practitioners from the database.");
+
+                var practitioners = await _practitionerApplication.GetAllAsync();
+
+                return Ok(practitioners);
+
                 //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 //{
                 //    Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -40,9 +45,15 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Controllers
                 //})
                 //.ToArray();
             }
-            catch (Exception e)
+            catch (TimeoutException ex)
             {
-                throw e;
+                _logger.LogError(ex, "Database timeout while fetching practitioners.");
+                return StatusCode(503, "Service is currently unavailable. Please try again later.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching practitioners from the database.");
+                return StatusCode(500, "An internal server error occurred.");
             }
         }
 
