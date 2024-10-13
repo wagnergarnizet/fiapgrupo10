@@ -13,6 +13,11 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Application.Services
             _practitionerService = practitionerService;
         }
 
+        public Task<Practitioner> Create()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<Practitioner>> GetAllAsync()
             => await _practitionerService.GetAllAsync();
     }
