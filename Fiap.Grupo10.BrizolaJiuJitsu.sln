@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJits
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fiap.Grupo10.BrizolaJiuJitsu.Test", "Fiap.Grupo10.BrizolaJiuJitsu.Test\Fiap.Grupo10.BrizolaJiuJitsu.Test.csproj", "{4FC9E79F-AC48-49CA-B123-1D4514B34529}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.Grupo10.BrizolaJiuJitsu.Logging", "Fiap.Grupo10.BrizolaJiuJitsu.Logging\Fiap.Grupo10.BrizolaJiuJitsu.Logging.csproj", "{45E00E88-D030-4E7E-8100-99212B7C0F67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4FC9E79F-AC48-49CA-B123-1D4514B34529}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FC9E79F-AC48-49CA-B123-1D4514B34529}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FC9E79F-AC48-49CA-B123-1D4514B34529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E00E88-D030-4E7E-8100-99212B7C0F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E00E88-D030-4E7E-8100-99212B7C0F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E00E88-D030-4E7E-8100-99212B7C0F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E00E88-D030-4E7E-8100-99212B7C0F67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
