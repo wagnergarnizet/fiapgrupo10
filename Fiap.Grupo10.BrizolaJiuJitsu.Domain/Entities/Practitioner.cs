@@ -7,8 +7,8 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Domain.Entities
     {
         public Guid Id { get; set; }
 
-        public string FullName { get; set; }
+        public required string FullName { get; set; }
 
-        public string BloodType { get; set; }
+        public string? BloodType { get; set; }
     }
 }

@@ -45,9 +45,9 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Infrastructure.Repositories
                 return result;
 
             }
-            catch (Exception e)
+            catch (Exception )
             {
-                throw e;
+                throw ;
             }
         }
 

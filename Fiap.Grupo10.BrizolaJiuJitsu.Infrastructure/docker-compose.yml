@@ -1,0 +1,29 @@
+﻿version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0  # Especificar a versão 8.0 do MySQL
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3307:3306"  # Alterar a porta do host para 3307
+    networks:
+      custom_network:
+        ipv4_address: 172.20.0.2
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init-scripts:/docker-entrypoint-initdb.d  # Montar o diretório de scripts de inicialização
+
+volumes:
+  mysql_data:
+
+networks:
+  custom_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
