@@ -40,9 +40,9 @@ namespace Fiap.Grupo10.BrizolaJiuJitsu.Controllers
                 //})
                 //.ToArray();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw ;
             }
         }
 
